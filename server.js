@@ -21,6 +21,10 @@ app.use((req, res, next) => {
 })
 
 //route
+app.use('/', (req, res) => {
+    console.log(req.path, req.method)
+    res.send("hi there! im careepo backend")
+})
 app.use('/api/workouts', workoutRoutes)
 app.use('/api/jobs', jobRoutes)
 app.use('/api/user', userRoutes)
