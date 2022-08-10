@@ -1,4 +1,4 @@
-const Job = require('../models/jobModel')
+const Job = require('../models/JobModel')
 const mongoose = require('mongoose')
 
 // get all jobs

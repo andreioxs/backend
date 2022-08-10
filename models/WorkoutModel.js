@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema
 
-const questionSchema = new Schema({
+const WorkoutSchema = new Schema({
   question: {
     type: String,
     required: true
@@ -22,4 +22,4 @@ const questionSchema = new Schema({
   }
 }, { timestamps: true })
 
-module.exports = mongoose.model('Workout', questionSchema)
+module.exports = mongoose.model('Workout', WorkoutSchema)
