@@ -8,6 +8,7 @@ const createToken = (_id) => {
 // login a user
 const loginUser = async (req, res) => {
   const {email, password} = req.body
+  console.log("HACK THE PLANET")
 
   try {
     const user = await User.login(email, password)
